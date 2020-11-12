@@ -7,8 +7,8 @@ def help
 end
 
 def list(songs)
-  songs.each_with_index do |val, index|
-    puts "#{index + 1}. #{val}"
+  songs.each_with_index do |song, index|
+    puts "#{index + 1}. #{song}"
   end
 end
 
@@ -16,10 +16,12 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input  = gets.strip
   
-  if songs.any?(user_input)
-    puts "Playing #{user_input}"
-  else
-    puts "Invalid input, please try again"
+  songs.each_with_index do |song, index|
+    if user_input == song ||  user_input == index
+      puts "Playing #{song}"
+    else
+      puts "Invalid input, please try again"
+    end
   end
 end
     
