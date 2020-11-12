@@ -22,6 +22,7 @@ def play(songs)
       puts "Playing #{songs[index]}"
     else 
       puts "Invalid input, please try again"
+      user_input = gets.strip
     end
   end
   
