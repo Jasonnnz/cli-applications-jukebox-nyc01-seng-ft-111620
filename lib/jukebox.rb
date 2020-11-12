@@ -17,7 +17,7 @@ def play(songs)
   user_input  = gets.strip
   if songs.member?(user_input)
     puts "Playing #{user_input}"
-  elsif songs.between?(1,9)
+  elsif user_input.to_i.between?(1,9)
     puts "Playing  #{songs[user_input]}"
   else 
     puts "Invalid input, please try again"
