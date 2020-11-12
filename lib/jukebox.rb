@@ -15,12 +15,13 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input  = gets.strip
-  songs.each_with_index do |song, index|
-    if user_input == song || user_input == index
-      puts "Playing #{song}"
-    end
+  if user_input.between?(1..9)
+    puts "Playing #{songs[user_input}"
+  elsif songs.member?(user_input)
+    puts "Playing #{user_input}"
+  else
+    puts "Invalid input, please try again"
   end
-  puts "Invalid input, please try again"
 end
     
 
