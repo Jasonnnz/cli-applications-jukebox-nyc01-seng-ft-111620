@@ -7,4 +7,5 @@ def help
 end
 
 def list(songs)
-  songs.each_with_index do |
+  songs.each_with_index do |val, index|
+    puts "#{index}. #{val}"
