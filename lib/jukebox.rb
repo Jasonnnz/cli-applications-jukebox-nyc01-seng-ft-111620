@@ -15,7 +15,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input  = gets.strip
-  if user_input.between?(1..9)
+  if user_input.between?(1,9)
     puts "Playing #{songs[user_input]}"
   elsif songs.member?(user_input)
     puts "Playing #{user_input}"
