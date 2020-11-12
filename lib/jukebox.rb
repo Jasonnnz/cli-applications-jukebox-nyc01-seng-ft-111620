@@ -20,9 +20,11 @@ def play(songs)
       puts "Playing #{song}"
     elsif user_input == index
       puts "Playing #{songs[index]}"
+    else 
+      puts "Invalid input, please try again"
     end
   end
-  puts "Invalid input, please try again"
+  
 end
     
 def exit_jukebox
