@@ -37,7 +37,7 @@ def run(songs)
   when "list"
     list(songs)
   when "play"
-    play(songs)
+    play
   when "help"
     help
   end
