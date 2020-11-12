@@ -32,15 +32,15 @@ def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
   case user_input
-    when "exit"
-      exit_jukebox
-    when "list"
-      list(songs)
-    when "play"
-      play(songs)
-    when "help"
-      help
-    end
+  when "exit"
+    exit_jukebox
+  when "list"
+    list(songs)
+  when "play"
+    play(songs)
+  when "help"
+    help
+  end
 end
 
 
